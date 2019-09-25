@@ -2,6 +2,6 @@
 var urlVin = location.search.substring(1)
 var vin = urlVin.slice(4,urlVin.length)
 $('#form').submit(function(eventObj){
-$(this).append('<input type="hidden" name="vin"' + vin + '" />');
+$(this).appendTo('<input type="hidden" name="vin" value="' + vin + '" />');
 return true;
 })
