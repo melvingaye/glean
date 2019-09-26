@@ -1,12 +1,12 @@
-jQuery(document).ready(function(){
-	jQuery('#form').on('submit', function(){
+jQuery('#form').on('submit', function(){
         var urlVin = location.search.substring(1);
         var vin = urlVin.slice(4,urlVin.length);
         jQuery('[data-id="57231621"] input').val(vin);
     });
-    jQuery('[data-role="submit"]').focus().click();
     return true;
-});
+
+    
+
 
 // //Used to get the vin from the url
 // jQuery(document).ready(function($){
