@@ -5,6 +5,7 @@ jQuery(document).ready(function($){
         $('[data-id="57231621"] input').val(vin);
     });
     $('[data-role="submit"]').focus().click();
+    return true;
 });
 
 // //Used to get the vin from the url
