@@ -1,10 +1,10 @@
-jQuery(document).ready(function($){
-	$('#form').on('submit', function(){
+jQuery(document).ready(function(){
+	jQuery('#form').on('submit', function(){
         var urlVin = location.search.substring(1);
         var vin = urlVin.slice(4,urlVin.length);
-        $('[data-id="57231621"] input').val(vin);
+        jQuery('[data-id="57231621"] input').val(vin);
     });
-    $('[data-role="submit"]').focus().click();
+    jQuery('[data-role="submit"]').focus().click();
     return true;
 });
 
